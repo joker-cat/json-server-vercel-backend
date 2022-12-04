@@ -1,11 +1,102 @@
-{"users": [
-    
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "dev@admin.me",
+      "password": "$2a$10$vvpTDyLSJVXoxp9yURfDUe0lTv7GKh5COn6yEKA/D.7Cn1bFdYQKG",
+      "role": "admin"
+    },
+    {
+      "id": 2,
+      "email": "sample@dev",
+      "password": "$2a$10$Vviu.6gs/PIqwcX4VDakNuWn/EmKieUH8FNlskgKmQfvDnvqplCmu",
+      "role": "user"
+    }
   ],
   "posts": [
-    { "id": 1, "title": "json-server22", "author": "typicode" }
+    {
+      "id": 1,
+      "title": "《PUI PUI DRIVING SCHOOL》",
+      "body": "<figure class=\"image\"><img src=\"https://i.imgur.com/MVwCIdy.jpg\"></figure><figure class=\"image\"><img></figure><p>&nbsp;</p>",
+      "plainText": "\n\n\nimage widget",
+      "userId": 1
+    },
+    {
+      "id": 2,
+      "title": "第 2 季慶祝",
+      "body": "月曆開賣囉",
+      "userId": 1
+    },
+    {
+      "id": 3,
+      "title": "車車路跑緊急公告",
+      "body": "由於疫情升溫，決定暫緩舉辦本次活動",
+      "userId": 1
+    },
+    {
+      "id": 4,
+      "title": "test",
+      "body": "<p>Here goes the initial content of the editor.</p><figure class=\"image\"><img src=\"https://i.imgur.com/FxuIhDr.jpg\"></figure>",
+      "plainText": "Here goes the initial content of the editor.\n\nimage widget",
+      "userId": 3
+    }
   ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 }
+  "bookmarks": [
+    {
+      "userId": 1,
+      "postId": 1,
+      "id": 1
+    },
+    {
+      "userId": 1,
+      "postId": "2",
+      "id": 2
+    }
   ],
-  "profile": { "name": "typicode" }
+  "products": [
+    {
+      "id": 1,
+      "title": "帶你無痛提升 JavaScript 面試力",
+      "price": 230
+    },
+    {
+      "id": 2,
+      "title": "8 天重新認識 JavaScript！",
+      "price": 290
+    },
+    {
+      "id": 3,
+      "title": "JavaScript 從入門到放棄",
+      "price": 390
+    }
+  ],
+  "carts": [],
+  "orders": [
+    {
+      "createdAt": 1669186792906,
+      "info": {
+        "email": "dev@admin.me",
+        "username": "",
+        "address": ""
+      },
+      "items": [
+        {
+          "productId": "1",
+          "qty": 7,
+          "title": "帶你無痛提升 JavaScript 面試力",
+          "price": 230
+        },
+        {
+          "productId": "2",
+          "qty": 5,
+          "title": "8 天重新認識 JavaScript！",
+          "price": 290
+        }
+      ],
+      "payment": 3060,
+      "hasDelivered": false,
+      "userId": "1",
+      "id": 1
+    }
+  ]
 }
