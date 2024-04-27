@@ -29,6 +29,12 @@ jsonServerApp.use(auth);
 jsonServerApp.db = router.db;
 app.use("/api", [jsonServerApp, router]);
 
+
+app.get("/", async (req, res) => {
+  res.send('木木苑串燒專門店mumuyuan - 學生作品');
+});
+
+
 httpServer.listen(port, () => {
   console.log("Server is running on port", port);
 });
